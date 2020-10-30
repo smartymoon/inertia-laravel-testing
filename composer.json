@@ -1,0 +1,54 @@
+{
+    "name": "smartymoon/inertia-laravel-testing",
+    "description": "Testing helpers for https://github.com/inertiajs/inertia-laravel",
+    "keywords": [
+        "laravel",
+        "inertia",
+        "testing",
+        "helpers",
+        "phpunit"
+    ],
+    "homepage": "https://github.com/smartymoon/inertia-laravel-testing",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lee",
+            "email": "pp787qq@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "inertiajs/inertia-laravel": "^v0.3",
+        "laravel/framework": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0|^5.0|^6.0",
+        "phpunit/phpunit": "^8.0|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Smartymoon\\Inertia\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Smartymoon\\Inertia\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Smartymoon\\Inertia\\InertiaTestingServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
